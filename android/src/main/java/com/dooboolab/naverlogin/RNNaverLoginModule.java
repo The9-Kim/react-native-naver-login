@@ -51,7 +51,7 @@ public class RNNaverLoginModule extends ReactContextBaseJavaModule {
   @ReactMethod
   public void logout() {
     if (mOAuthLoginModule != null) {
-      mOAuthLoginModule.logout(reactContext);
+      mOAuthLoginModule.logoutAndDeleteToken(reactContext);
     }
   }
 
